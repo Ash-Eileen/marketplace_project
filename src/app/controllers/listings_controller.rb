@@ -11,6 +11,20 @@ class ListingsController < ApplicationController
   # GET /listings/1
   # GET /listings/1.json
   def show
+    @session = Stripe::Checkout::Session.create(
+      payment_method_types: ['card'],
+      customer_email: current_user.email,
+      line_items: [{
+          name: @listing.name,
+          amount: @listing.price * 100,
+          currency: 'aud',
+          quantity: 1,
+      }],
+      success_url: "#{root_url}payments/success?userId=#{current_user.id}&listingId=#{@listing.id}",
+      cancel_url: "#{root_url}listings"
+  )
+
+  @session_id = @session.id
   end
 
   # GET /listings/new

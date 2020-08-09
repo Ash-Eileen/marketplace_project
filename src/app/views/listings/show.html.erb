@@ -24,8 +24,10 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @listing.price %>
+  <%= number_to_currency(@listing.price) %>
 </p>
-
+<button>Buy 1 hour of coaching: <%= number_to_currency(@listing.price) %></button>
+<br>
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
+
