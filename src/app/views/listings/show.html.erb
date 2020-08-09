@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @listing.name %>
+</p>
+
+<%= image_tag @listing.picture if @listing.picture.attached? %>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @listing.bio %>
+</p>
+
+<p>
+  <strong>Agent:</strong>
+  <%= @listing.agent %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @listing.availability %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

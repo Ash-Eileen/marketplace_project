@@ -1,0 +1,54 @@
+<%= form_with(model: listing, local: true) do |form| %>
+  <% if listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+        <% listing.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, required: true %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_area :bio, required: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agents %>
+    <br>
+    <% @agents.each do |option| %>
+    <%= form.label option %>
+    <%= form.radio_button :agent, option, required: true %>
+    <% end %>
+  </div>
+
+  <div class="field">
+    <%= form.label :availability %>
+    <%= form.text_area :availability, required: true  %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, required: true  %>
+  </div>
+
+  <%= image_tag @listing.picture if @listing.picture.attached? %>
+
+  <div>
+    <%= form.label :picture %> <%= form.file_field :picture, accept:
+    'image/png,image/gif,image/jpeg,image/jpg' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+<% end %>
