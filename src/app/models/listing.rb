@@ -17,4 +17,14 @@ class Listing < ApplicationRecord
   }
 
   has_one_attached :picture
+
+  validates :name, presence: true
+  validates :bio, presence: true, length: {maximum: 300}
+  validates :agent, :availability, presence: true
+  validates :price, numericality: true
+
+  def self.all_agent_listings(agent)
+    listings = Listing.where(agent: agent).reverse_order
+  end
+
 end

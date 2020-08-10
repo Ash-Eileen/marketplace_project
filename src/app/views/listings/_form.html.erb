@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= form.label :name %>
-    <%= form.text_field :name, required: true %>
+    <%= form.text_field :name %>
   </div>
 
   <div class="field">
     <%= form.label :bio %>
-    <%= form.text_area :bio, required: true  %>
+    <%= form.text_area :bio%>
   </div>
 
   <div class="field">
@@ -26,18 +26,18 @@
     <br>
     <% @agents.each do |option| %>
     <%= form.label option %>
-    <%= form.radio_button :agent, option, required: true %>
+    <%= form.radio_button :agent, option%>
     <% end %>
   </div>
 
   <div class="field">
     <%= form.label :availability %>
-    <%= form.text_area :availability, required: true  %>
+    <%= form.text_area :availability%>
   </div>
 
   <div class="field">
     <%= form.label :price %>
-    <%= form.number_field :price, required: true  %>
+    <%= form.number_field :price%>
   </div>
 
   <%= image_tag @listing.picture if @listing.picture.attached? %>

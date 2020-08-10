@@ -4,7 +4,7 @@ class CreateListings < ActiveRecord::Migration[6.0]
       t.string :name
       t.text :bio
       t.integer :agent
-      t.integer :availability
+      t.text :availability
       t.integer :price
       t.references :user, null: false, foreign_key: true
 

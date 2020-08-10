@@ -23,13 +23,18 @@
 </p>
 
 <p>
-  <strong>Price:</strong>
+  <strong>Price for 1 hour of coaching:</strong>
   <%= number_to_currency(@listing.price) %>
 </p>
-<button data-stripe="payment">Buy 1 hour of coaching: <%= number_to_currency(@listing.price) %></button>
+<% if user_signed_in? && current_user.id != @listing.user_id  %>
+  <button class="btn btn-primary" data-stripe="payment">Buy 1 hour of coaching: <%= number_to_currency(@listing.price) %></button>
+<% elsif !user_signed_in? %>
+  <button type="button" class="btn btn-primary"> <%= link_to 'Please sign in to purchase coaching session', new_user_session_path, class:"text-white" %> </button>
+<% end %>
 <br>
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
 <%= link_to 'Back', listings_path %>
+
 
 <script src="https://js.stripe.com/v3/"></script>
 

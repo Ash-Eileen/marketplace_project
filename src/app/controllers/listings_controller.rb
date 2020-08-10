@@ -1,4 +1,5 @@
 class ListingsController < ApplicationController
+  before_action :authenticate_user!,  except: [:show, :index]
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
   before_action :set_agents
 
@@ -11,20 +12,28 @@ class ListingsController < ApplicationController
   # GET /listings/1
   # GET /listings/1.json
   def show
-    @session = Stripe::Checkout::Session.create(
-      payment_method_types: ['card'],
-      customer_email: current_user.email,
-      line_items: [{
-          name: @listing.name,
-          amount: @listing.price * 100,
-          currency: 'aud',
-          quantity: 1,
-      }],
-      success_url: "#{root_url}payments/success?userId=#{current_user.id}&listingId=#{@listing.id}",
-      cancel_url: "#{root_url}listings"
-  )
+    if user_signed_in? 
+      @session = Stripe::Checkout::Session.create(
+        payment_method_types: ['card'],
+        customer_email: current_user.email,
+        line_items: [{
+            name: @listing.name,
+            amount: @listing.price * 100,
+            currency: 'aud',
+            quantity: 1,
+        }],
+        payment_intent_data: {
+              metadata: {
+                  user_id: current_user.id,
+                  listing_id: @listing.id
+              }
+          },
+        success_url: "#{root_url}payments/success?userId=#{current_user.id}&listingId=#{@listing.id}",
+        cancel_url: "#{root_url}listings"
+      )
 
-  @session_id = @session.id
+      @session_id = @session.id
+    end
   end
 
   # GET /listings/new
@@ -74,6 +83,10 @@ class ListingsController < ApplicationController
       format.html { redirect_to listings_url, notice: 'Listing was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def cypher
+
   end
 
   private
