@@ -18,15 +18,13 @@
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
-        <td><%= listing.user.username %></td>
+        <td><%= listing.seller.username %></td>
         <td><%= listing.bio %></td>
         <td><%= listing.agent %></td>
         <td><%= listing.availability %></td>
-        <td><%= listing.price %></td>
+        <td><%= number_to_currency(listing.price) %></td>
         <td> <%= image_tag listing.picture if listing.picture.attached? %> </td>
         <td><%= link_to 'Show', listing %></td>
-        <td><%= link_to 'Edit', edit_listing_path(listing) if user_signed_in? && current_user.id == listing.user_id  %></td>
-        <td><%= link_to 'Delete', listing, method: :delete, data: { confirm: 'Are you sure?' } if user_signed_in? && current_user.id == listing.user_id && user_signed_in? %></td>
       </tr>
     <% end %>
   </tbody>

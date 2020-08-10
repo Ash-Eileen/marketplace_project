@@ -3,8 +3,11 @@ class PurchasesController < ApplicationController
 
     def success
         @listing = Listing.find(params[:id])
- 
-        flash[:notice] = "You have successfully purchased this coaching session!"
+        @listing.sold = true
+        @listing.save
+
+        @purchased_listing = Purchase.new(buyer_id: current_user.id, listing_id: @listing.id)
+        @purchased_listing .save
     end
     
     def webhook

@@ -1,6 +1,6 @@
 <h2 class="title">Order Complete!</h2>
 
-<p><%= @listing.user.username %> (<%= @listing.user.email %>) will be in contact shortly for pickup details</p>
+<p><%= @listing.seller.username %> (<%= @listing.seller.email %>) will be in contact shortly to discuss setting up your coaching session!</p>
 <p>&nbsp;</p>
 <p><strong>Your Order Details:</strong></p>
 <table class="table">
@@ -8,15 +8,15 @@
 <tr>
 <th>Coach</th>
 <th>Agent</th>
-<th>Price Per Hour</th>
+<th>1 Hour Coaching Session</th>
 <th>Seller's Email</th>
 </tr>
 </thead>
 <tbody class="tbody">
 <tr class="tr">
-<td class="td"><%= @listing.user.username %></td>
+<td class="td"><%= @listing.seller.username %></td>
 <td class="td"><%= @listing.agent %></td>
 <td class="td"><%= number_to_currency @listing.price %></td>
-<td class="td"><%= @listing.user.email %></td>
+<td class="td"><%= @listing.seller.email %></td>
 
 <%= link_to "Go To Listings", listings_path%>

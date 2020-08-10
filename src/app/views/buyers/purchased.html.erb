@@ -1,0 +1,19 @@
+<% if @listings.length > 0%>
+<h2 class="title"><%= current_user.username %> has purchased </h2>
+
+
+<div class ="listings">
+<% @listings.each do | l | %>
+    <p>
+        <%= image_tag l.listing.picture if l.listing.picture.attached? %>
+    </p>
+    <p><%= link_to 'Show Listing', l.listing %></p>
+    <p><%= number_to_currency(l.listing.price)%></p>
+    <p><strong>Purchased:</strong> <%= l.listing.created_at.to_date%></p>
+    <p><strong>Coach:</strong> <%= l.listing.seller.username %></p>
+    <p><strong>Email:</strong> <%= l.listing.seller.email %></p>
+<% end%>
+</div>
+<%else%>
+    <h3 class="title has-text-centered"><%=current_user.username%> currently has bought no items</h3>
+<%end%>

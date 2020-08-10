@@ -1,5 +1,5 @@
 class Listing < ApplicationRecord
-  belongs_to :user
+  belongs_to :seller, class_name: "User"
 
   enum agent: { 
     Breach: 0, 
@@ -24,6 +24,14 @@ class Listing < ApplicationRecord
 
   def self.all_agent_listings(agent)
     listings = Listing.where(agent: agent).reverse_order
+  end
+
+  def self.listings_for_seller(seller)
+    listings = Listing.where(seller_id: seller, sold: false).reverse_order
+  end
+
+  def self.listings_sold(seller)
+    listings = Listing.where(seller_id: seller, sold: true).reverse_order
   end
 
 end

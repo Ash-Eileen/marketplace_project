@@ -3,17 +3,70 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav justify-content-around text-center">
       <li class="nav-item active">
         <%= link_to "Home", root_path, class:"nav-link" %>
       </li>
       <li class="nav-item active">
-      <% if user_signed_in?%>
-          <%= link_to "Logout", destroy_user_session_path, method:"DELETE", class:"nav-link" %>
-      <% else %>
-          <%= link_to 'Login', new_user_session_path, class:"nav-link" %>
-      <% end %>
+        <%= link_to "Breach", breach_path, class:"nav-link" %>
       </li>
+      <li class="nav-item active">
+        <%= link_to "Cypher", cypher_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Jett", jett_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Killjoy", killjoy_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Omen", omen_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Phoenix", phoenix_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Raze", raze_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Sage", sage_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Sova", sova_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item active">
+        <%= link_to "Viper", viper_path, class:"nav-link" %>
+      </li>
+
+      </li>
+        <% if user_signed_in?%>
+        <li class="nav-item active">
+            <%= link_to 'Purchased Coaching Sessions', purchased_listings_path(current_user), class:"nav-link"%>
+        </li>
+        <li class="nav-item active">
+          <%= link_to 'Manage Listings', seller_path(current_user), class: "nav-link"%>
+        </li>
+        <li class="nav-item active">
+          <%= link_to 'Your sold items', sold_items_path(current_user), class: "nav-link"  %>
+        </li>
+        <li class="nav-item active">
+          <%= link_to "Logout", destroy_user_session_path, method:"DELETE", class:"nav-link" %>
+        </li>
+
+      <% else %>
+        <li class="nav-item active">
+          <%= link_to 'Login', new_user_session_path, class:"nav-link" %>
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>
+

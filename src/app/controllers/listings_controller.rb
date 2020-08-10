@@ -17,7 +17,7 @@ class ListingsController < ApplicationController
       payment_method_types: ['card'],
       customer_email: current_user.email,
       line_items: [{
-          name: @listing.user.username,
+          name: @listing.seller.username,
           amount: @listing.price * 100,
           currency: 'aud',
           quantity: 1,
@@ -85,8 +85,52 @@ class ListingsController < ApplicationController
     end
   end
 
-  def cypher
+  def breach
+    @listings = Listing.all_agent_listings("Breach")
+  end
 
+  def brimstone
+    @listings = Listing.all_agent_listings("Brimstone")
+  end
+
+  def cypher
+    @listings = Listing.all_agent_listings("cypher")
+  end
+
+  def jett
+    @listings = Listing.all_agent_listings("Jett")
+  end
+
+  def killjoy
+    @listings = Listing.all_agent_listings("Killjoy")
+  end
+
+  def omen
+    @listings = Listing.all_agent_listings("Omen")
+  end
+
+  def phoenix
+    @listings = Listing.all_agent_listings("Phoenix")
+  end  
+  
+  def raze
+    @listings = Listing.all_agent_listings("Raze")
+  end  
+
+  def reyna
+    @listings = Listing.all_agent_listings("Reyna")
+  end  
+  
+  def sage
+    @listings = Listing.all_agent_listings("Sage")
+  end  
+  
+  def sova
+    @listings = Listing.all_agent_listings("Sova")
+  end  
+
+  def viper
+    @listings = Listing.all_agent_listings("Viper")
   end
 
   private

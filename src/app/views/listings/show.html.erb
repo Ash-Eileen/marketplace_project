@@ -2,7 +2,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @listing.user.username %>
+  <%= @listing.seller.username %>
 </p>
 
 <%= image_tag @listing.picture if @listing.picture.attached? %>
@@ -26,7 +26,7 @@
   <strong>Price for 1 hour of coaching:</strong>
   <%= number_to_currency(@listing.price) %>
 </p>
-<% if user_signed_in? && current_user.id != @listing.user_id  %>
+<% if user_signed_in? && current_user.id != @listing.seller_id  %>
   <button class="btn btn-primary" data-stripe="payment">Buy 1 hour of coaching: <%= number_to_currency(@listing.price) %></button>
 <% elsif !user_signed_in? %>
   <button type="button" class="btn btn-primary"> <%= link_to 'Please sign in to purchase coaching session', new_user_session_path, class:"text-white" %> </button>

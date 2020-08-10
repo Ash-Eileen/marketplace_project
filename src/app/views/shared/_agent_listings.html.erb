@@ -1,0 +1,14 @@
+<% if @listings.length > 0 %>
+    <div class="row row-cols-5 justify-content-around text-center">
+        <% @listings.each do |listing| %>
+            <div class="card">
+                <%= image_tag listing.picture, class:"mx-auto" if listing.picture.attached? %>
+                <div class="card-title"><%= listing.seller.username %></div>
+                <%= number_to_currency(listing.price)%>
+                <button type="button" class="btn btn-danger"> <%= link_to 'View Listing', listing_path(listing), class:"text-white" %> </button>
+            </div>
+        <%end%>
+    </div>
+    <%else%>
+        <p>No coaches are available yet! Check back soon.</p>
+<%end%>

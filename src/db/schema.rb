@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_10_014753) do
+ActiveRecord::Schema.define(version: 2020_08_10_030133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,10 +41,20 @@ ActiveRecord::Schema.define(version: 2020_08_10_014753) do
     t.integer "agent"
     t.text "availability"
     t.integer "price"
-    t.bigint "user_id", null: false
+    t.bigint "seller_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_listings_on_user_id"
+    t.boolean "sold", default: false
+    t.index ["seller_id"], name: "index_listings_on_seller_id"
+  end
+
+  create_table "purchases", force: :cascade do |t|
+    t.bigint "buyer_id"
+    t.bigint "listing_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["buyer_id"], name: "index_purchases_on_buyer_id"
+    t.index ["listing_id"], name: "index_purchases_on_listing_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -62,5 +72,7 @@ ActiveRecord::Schema.define(version: 2020_08_10_014753) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "listings", "users"
+  add_foreign_key "listings", "users", column: "seller_id"
+  add_foreign_key "purchases", "listings"
+  add_foreign_key "purchases", "users", column: "buyer_id"
 end

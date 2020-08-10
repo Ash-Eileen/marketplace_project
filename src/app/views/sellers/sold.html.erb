@@ -1,0 +1,13 @@
+<% if @listings.length > 0%>
+<h2>Coaching Sessions Purchased with <%= current_user.username %></h2>
+
+<% @listings.each do | listing | %>
+    <%= image_tag listing.picture if listing.picture.attached? %>
+    <p><%= link_to 'Show Listing', listing %></p>
+    <p><%= number_to_currency(listing.price)%></p>
+    <p>Purchased: <%= listing.updated_at.to_date%></p>
+<% end%>
+</div>
+<%else%>
+    <h3 class="title has-text-centered"><%=current_user.username%> currently has no purchased coaching sessions</h3>
+<%end%>
