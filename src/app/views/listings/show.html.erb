@@ -33,6 +33,7 @@
 <% end %>
 <br>
 <%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to "Delete", @listing, method: "delete", data: {confirm: "Really delete the listing?"} %>
 <%= link_to 'Back', listings_path %>
 
 

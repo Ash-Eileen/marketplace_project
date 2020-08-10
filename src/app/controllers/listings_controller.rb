@@ -1,5 +1,5 @@
 class ListingsController < ApplicationController
-  before_action :authenticate_user!,  except: [:show, :index]
+  before_action :authenticate_user!,  only: [:edit, :update, :destroy]
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
   before_action :set_agents
 
@@ -49,7 +49,7 @@ class ListingsController < ApplicationController
   # POST /listings.json
   def create
     @listing = Listing.new(listing_params)
-    @listing.user_id = current_user.id
+    @listing.seller_id = current_user.id
     respond_to do |format|
       if @listing.save
         format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
@@ -94,7 +94,7 @@ class ListingsController < ApplicationController
   end
 
   def cypher
-    @listings = Listing.all_agent_listings("cypher")
+    @listings = Listing.all_agent_listings("Cypher")
   end
 
   def jett
@@ -149,3 +149,4 @@ class ListingsController < ApplicationController
     end
 
 end
+# Brimstone

@@ -27,7 +27,7 @@ class Listing < ApplicationRecord
   end
 
   def self.listings_for_seller(seller)
-    listings = Listing.where(seller_id: seller, sold: false).reverse_order
+    listings = Listing.where(seller_id: seller).reverse_order
   end
 
   def self.listings_sold(seller)
