@@ -1,16 +1,8 @@
 class ListingsController < ApplicationController
-  before_action :authenticate_user!,  only: [:edit, :update, :destroy]
+  before_action :authenticate_user!,  only: [:new, :create, :edit, :update, :destroy]
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
   before_action :set_agents
 
-  # GET /listings
-  # GET /listings.json
-  def index
-    @listings = Listing.all
-  end
-
-  # GET /listings/1
-  # GET /listings/1.json
   def show
     if user_signed_in? 
     @session = Stripe::Checkout::Session.create(
@@ -149,4 +141,3 @@ class ListingsController < ApplicationController
     end
 
 end
-# Brimstone

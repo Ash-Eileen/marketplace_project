@@ -1,12 +1,14 @@
 <% if @listings.length > 0%>
-<h2>Listings posted by<%= @user.username %></h2>
+<h2>Listings posted by <%= @user.username %></h2>
 
 <% @listings.each do | listing | %>
     <%= image_tag listing.picture if listing.picture.attached? %>
     
     <p><%= link_to 'Show Listing', listing %></p>
-    <p><%= number_to_currency(listing.price)%></p>
+    <p>Agent: <%= listing.agent %></p>
+    <p>Price per hour: <%= number_to_currency(listing.price)%></p>
+    <hr>
 <% end%>
 <%else%>
-    <h3 class="title has-text-centered"><%=@user.username%> currently has no coaching sessions listed.</h3>
+    <h3 class="text-center"><%=@user.username%> currently has no coaching sessions listed.</h3>
 <%end%>

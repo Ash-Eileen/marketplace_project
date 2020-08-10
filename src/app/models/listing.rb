@@ -23,11 +23,11 @@ class Listing < ApplicationRecord
   validates :price, numericality: true
 
   def self.all_agent_listings(agent)
-    listings = Listing.where(agent: agent).reverse_order
+    listings = Listing.where(agent: agent, sold: false).reverse_order
   end
 
   def self.listings_for_seller(seller)
-    listings = Listing.where(seller_id: seller).reverse_order
+    listings = Listing.where(seller_id: seller, sold: false).reverse_order
   end
 
   def self.listings_sold(seller)

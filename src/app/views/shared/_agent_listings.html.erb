@@ -3,8 +3,8 @@
         <% @listings.each do |listing| %>
             <div class="card">
                 <%= image_tag listing.picture, class:"mx-auto" if listing.picture.attached? %>
-                <div class="card-title"><%= listing.seller.username %></div>
-                <%= number_to_currency(listing.price)%>
+                <div class="card-title"><strong>Coach:</strong> <%= listing.seller.username %></div>
+                <div class="card-title"><strong>Price Per Hour: </strong><%= number_to_currency(listing.price)%></div>
                 <button type="button" class="btn btn-danger"> <%= link_to 'View Listing', listing_path(listing), class:"text-white" %> </button>
             </div>
         <%end%>

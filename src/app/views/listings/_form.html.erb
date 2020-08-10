@@ -12,38 +12,45 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :bio %>
+    <%= form.label :bio, "Bio - Tell us a little about yourself, e.g. your rank and what you can help with!", class:"font-weight-bold" %>
+    <br>
     <%= form.text_area :bio%>
   </div>
 
   <div class="field">
-    <%= form.label :agents %>
+    <%= form.label :agents, class:"font-weight-bold" %>
     <br>
     <% @agents.each do |option| %>
-    <%= form.label option %>
     <%= form.radio_button :agent, option%>
+    <%= form.label option %>
+    <br>
     <% end %>
   </div>
 
   <div class="field">
-    <%= form.label :availability %>
+    <%= form.label :availability, class:"font-weight-bold" %>
+    <br>
     <%= form.text_area :availability%>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
+    <%= form.label :price, class:"font-weight-bold" %>
+    <br>
     <%= form.number_field :price%>
   </div>
 
   <%= image_tag @listing.picture if @listing.picture.attached? %>
 
   <div>
-    <%= form.label :picture %> <%= form.file_field :picture, accept:
-    'image/png,image/gif,image/jpeg,image/jpg' %>
+    <%= form.label :picture, class:"font-weight-bold" %> 
+    <br>
+    <%= form.file_field :picture, accept:'image/png,image/gif,image/jpeg,image/jpg' %>
   </div>
-
+  
+  <br>
+  
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Submit listing", class:"btn btn-danger" %>
   </div>
 
 <% end %>

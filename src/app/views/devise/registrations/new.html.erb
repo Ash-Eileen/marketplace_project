@@ -4,7 +4,7 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :username, class:"label" %><br />
+    <%= f.label :username, "Username. This will be your profile name for all posts." %><br />
     <%= f.text_field :username, autofocus: true, class:"input" %>
   </div>
 
@@ -27,7 +27,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <%= f.submit "Sign up", class:"btn btn-danger" %>
   </div>
 <% end %>
 

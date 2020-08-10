@@ -1,39 +1,43 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h5>
+  <strong>Coach:</strong>
   <%= @listing.seller.username %>
-</p>
-
+</h5>
+<br>
 <%= image_tag @listing.picture if @listing.picture.attached? %>
+<br>
 
-<p>
+<h5>
   <strong>Bio:</strong>
   <%= @listing.bio %>
 </p>
 
-<p>
+<h5>
   <strong>Agent:</strong>
   <%= @listing.agent %>
-</p>
+</h5>
 
-<p>
+<h5>
   <strong>Availability:</strong>
   <%= @listing.availability %>
-</p>
+</h5>
 
-<p>
+<h5>
   <strong>Price for 1 hour of coaching:</strong>
   <%= number_to_currency(@listing.price) %>
-</p>
+</h5>
+
 <% if user_signed_in? && current_user.id != @listing.seller_id  %>
-  <button class="btn btn-primary" data-stripe="payment">Buy 1 hour of coaching: <%= number_to_currency(@listing.price) %></button>
+  <button class="btn btn-danger" data-stripe="payment">Buy 1 hour of coaching: <%= number_to_currency(@listing.price) %></button>
 <% elsif !user_signed_in? %>
-  <button type="button" class="btn btn-primary"> <%= link_to 'Please sign in to purchase coaching session', new_user_session_path, class:"text-white" %> </button>
+  <button type="button" class="btn btn-danger"> <%= link_to 'Please sign in to purchase coaching session', new_user_session_path, class:"text-white" %> </button>
 <% end %>
 <br>
-<%= link_to 'Edit', edit_listing_path(@listing) %> |
-<%= link_to "Delete", @listing, method: "delete", data: {confirm: "Really delete the listing?"} %>
+<%= link_to 'Edit', edit_listing_path(@listing) if user_signed_in? && current_user.id == @listing.seller_id %> |
+<%= link_to "Delete", @listing, method: "delete", data: {confirm: "Really delete the listing?"} if user_signed_in? && current_user.id == @listing.seller_id %>
+<br>
+
 <%= link_to 'Back', listings_path %>
 
 

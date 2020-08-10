@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get 'listings/sova', to: "listings#sova", as: "sova"
   get 'listings/viper', to: "listings#viper", as: "viper"
 
-  resources :listings
+  resources :listings, :except => [:index]
 
   get "/purchases/success/:id", to: "purchases#success", as: "payment_complete"
   post "/purchases/webhook", to: "purchases#webhook"
