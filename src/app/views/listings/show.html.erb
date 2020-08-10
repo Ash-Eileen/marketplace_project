@@ -2,7 +2,7 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @listing.name %>
+  <%= @listing.user.username %>
 </p>
 
 <%= image_tag @listing.picture if @listing.picture.attached? %>

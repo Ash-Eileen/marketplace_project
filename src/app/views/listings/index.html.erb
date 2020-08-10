@@ -18,7 +18,7 @@
   <tbody>
     <% @listings.each do |listing| %>
       <tr>
-        <td><%= listing.name %></td>
+        <td><%= listing.user.username %></td>
         <td><%= listing.bio %></td>
         <td><%= listing.agent %></td>
         <td><%= listing.availability %></td>
