@@ -20,7 +20,7 @@ class Listing < ApplicationRecord
 
   validates :bio, presence: true, length: {maximum: 300}
   validates :agent, :availability, presence: true
-  validates :price, numericality: true
+  validates :price, numericality: { greater_than_or_equal_to: 1 }
 
   def self.all_agent_listings(agent)
     listings = Listing.where(agent: agent, sold: false).reverse_order
