@@ -128,7 +128,9 @@ Homepage
 
 ![Homepage - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Homepage%20-%20Desktop.png)
 
-Agent Page![Agent Page - Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Agent%20Page%20-%20Mobile.png)
+Agent Page
+
+![Agent Page - Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Agent%20Page%20-%20Mobile.png)
 
 ![Agent Page - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Agent%20Page%20-%20Tablet.png)
 
