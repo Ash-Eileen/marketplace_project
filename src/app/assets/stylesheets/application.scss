@@ -13,50 +13,60 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
+/* Adds bootstrap */
+@import "bootstrap";
 
+/* Ensures all cards are the same height. */
 $card-height: 100%;
 
+/* Removes some default styling from jumbotron to make it fit page better. */
 .jumbotron {
     margin-bottom: 0;
     padding: 2%;
 }
 
+/* Stretches navbar to entire width and adjusts font size .*/
 .navbar-nav {
     width: 100%;
     font-size: 1rem;
 }
 
+/* Forces agent images to stick to height and width guides. */
 .agent-img {
     height: 250px;
     max-width: 300px;
-
 }
 
+/* Wrapper so footer sticks to bottom. */
 .content-wrap {
   padding-bottom: 3rem;
 }
 
+/* Wrapper so footer sticks to bottom. */
 .page-container {
     position: relative;
     min-height: 100vh;
 }
 
+/* Changes link styling. */
 a {
     text-decoration: none;
     color: #666;
 }
 
+/* Removes decoration on link hover. */
 a:hover{
     text-decoration: none;
     background: none;
 }
 
+/* Forces all other images to stick to height and width guides. */
 img {
     max-height: 200px;
     max-width: 100px;
 }
 
+/* Fixes footer to bottom of page. */
 footer {
   position: absolute;
   bottom: 0;
