@@ -39,51 +39,51 @@ In future I would like to add an internal messaging system, reviews and also tra
 
 Home Page
 
-![Home Page](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Homepage.png)
+![Home Page](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Homepage.png)
 
 Agent Page
 
-![Agent Page](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Agent Page.png)
+![Agent Page](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Agent%20Page.png)
 
 Listing View for Another Seller's Listing
 
-![Viewing another listing](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Viewing another listing.png)
+![Viewing another listing](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Viewing%20another%20listing.png)
 
 Listing View for Own Listing
 
-![](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\View as Seller.png)
+![View as seller](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/View%20as%20Seller.png)
 
 Listing form - same form comes up on edit with pre-filled details
 
-![Listing Form](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Listing Form.png)
+![Listing Form](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Listing%20Form.png)
 
 Stripe Payment
 
-![Stripe Payment](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Stripe payment.png)
+![Stripe Payment](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Stripe%20payment.png)
 
 Successful Purchase
 
-![Successful payment](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Successful payment.png)
+![Successful payment](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Successful%20payment.png)
 
 Purchased Listings
 
-![Purchased Listing](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Purchased Listing.png)
+![Purchased Listing](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Purchased%20Listing.png)
 
 Manage Listings
 
-![Manage Listings](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Manage Listings.png)
+![Manage Listings](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Manage%20Listings.png)
 
 Sold Listings
 
-![Sold Listings](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Sold Listings.png)
+![Sold Listings](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Sold%20Listings.png)
 
 Sign In
 
-![Login](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Login.png)
+![Login](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Login.png)
 
 Sign Up
 
-![Sign Up](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\screenshots of website\Sign Up.png)
+![Sign Up](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/screenshots%20of%20website/Sign%20Up.png)
 
 ### Target Audience
 
@@ -122,89 +122,91 @@ As a user I want to be able to:
 
 Homepage
 
-![Homepage - Mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Homepage - Mobile.png) ![Homepage - Tablet](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Homepage - Tablet.png)
+![Homepage - Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Homepage%20-%20Mobile.png) 
 
-![Homepage - Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Homepage - Desktop.png)
+![Homepage - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Homepage%20-%20Tablet.png)
 
-Agent Page![Agent Page - Mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Agent Page - Mobile.png)
+![Homepage - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Homepage%20-%20Desktop.png)
 
-![](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Agent Page - Tablet.png)
+Agent Page![Agent Page - Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Agent%20Page%20-%20Mobile.png)
 
-![Agent Page - Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Agent Page - Desktop.png)
+![Agent Page - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Agent%20Page%20-%20Tablet.png)
+
+![Agent Page - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Agent%20Page%20-%20Desktop.png)
 
 Form for Listings - form is the same for edit but with details prefilled
 
-![Form For Listings - Mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Form For Listings - Mobile.png)
+![Form For Listings - Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Form%20For%20Listings%20-%20Mobile.png)
 
-![](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Form For Listings - Tablet.png)
+![Form For Listing - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Form%20For%20Listings%20-%20Tablet.png)
 
-![Form For Listings - Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Form For Listings - Desktop.png)
+![Form For Listings - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Form%20For%20Listings%20-%20Desktop.png)
 
 Listing - not own
 
-![Coach Page Not Own- Mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Coach Page Not Own- Mobile.png)
+![Coach Page Not Own- Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Coach%20Page%20Not%20Own-%20Mobile.png)
 
-![Coach Page Not Own- Tablet](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Coach Page Not Own- Tablet.png)
+![Coach Page Not Own- Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Coach%20Page%20Not%20Own-%20Tablet.png)
 
-![Coach Page Not Own- Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Coach Page Not Own- Desktop.png)
+![Coach Page Not Own- Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Coach%20Page%20Not%20Own-%20Desktop.png)
 
 Listing - Own
 
-![Coach Page Own- Mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Coach Page Own- Mobile.png)
+![Coach Page Own- Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Coach%20Page%20Own-%20Mobile.png)
 
-![Coach Page Own- Tablet](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Coach Page Own- Tablet.png)
+![Coach Page Own- Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Coach%20Page%20Own-%20Tablet.png)
 
-![Coach Page Own- Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Coach Page Own- Desktop.png)
+![Coach Page Own- Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Coach%20Page%20Own-%20Desktop.png)
 
 Login
 
-![Login Page - Mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Login Page - Mobile.png)
+![Login Page - Mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Login%20Page%20-%20Mobile.png)
 
-![](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Login Page - Tablet.png)
+![Login Page - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Login%20Page%20-%20Tablet.png)
 
-![Login Page - Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Login Page - Desktop.png)
+![Login Page - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Login%20Page%20-%20Desktop.png)
 
 Successful Purchase
 
-![Successful Payment - mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Successful Payment - mobile.png)
+![Successful Payment - mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Successful%20Payment%20-%20mobile.png)
 
-![Successful Payment - Tablet](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Successful Payment - Tablet.png)
+![Successful Payment - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Successful%20Payment%20-%20Tablet.png)
 
-![Successful Payment - Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Successful Payment - Desktop.png)
+![Successful Payment - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Successful%20Payment%20-%20Desktop.png)
 
 My Listings
 
-![My Listings - mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\My Listings - mobile.png)
+![My Listings - mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/My%20Listings%20-%20mobile.png)
 
-![My Listings - Tablet](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\My Listings - Tablet.png)
+![My Listings - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/My%20Listings%20-%20Tablet.png)
 
-![My Listings - Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\My Listings - Desktop.png)
+![My Listings - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/My%20Listings%20-%20Desktop.png)
 
 Sold Listings
 
-![Sold Listings - mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\Sold Listings - mobile.png)
+![Sold Listings - mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/Sold%20Listings%20-%20mobile.png)
 
-![Sold Listings - tablet](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\Sold Listings - tablet.png)
+![Sold Listings - tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/Sold%20Listings%20-%20tablet.png)
 
-![](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\Sold Listings - Desktop.png)
+![Sold Listings - desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/Sold%20Listings%20-%20Desktop.png)
 
 My Purchases
 
-![My Purchase - mobile](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Mobile\My Purchase - mobile.png)
+![My Purchase - mobile](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Mobile/My%20Purchase%20-%20mobile.png)
 
-![My Purchases - Tablet](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Tablet\My Purchases - Tablet.png)
+![My Purchases - Tablet](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Tablet/My%20Listings%20-%20Tablet.png)
 
-![My Purchases - Desktop](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Wireframes\Desktop\My Purchases - Desktop.png)
+![My Purchases - Desktop](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Wireframes/Desktop/My%20Listings%20-%20Desktop.png)
 
 ## ERD
 
 Original
 
-![original erd](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\original erd.png)
+![original erd](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/original%20erd.png)
 
 Final
 
-![final erd](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\final erd.png)
+![final erd](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/final%20erd.png)
 
 ##  Different High-level Components (abstractions) in the App
 
@@ -259,7 +261,7 @@ To keep the structure simple there are three database tables in my app with two 
 
 ## Schema
 
-![schema](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\schema.PNG)
+![schema](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/schema.PNG)
 
 ## Task allocation
 
@@ -280,32 +282,32 @@ As opposed to working as a daily set of tasks I chose to work on stages which va
 
 Initial Trello Board
 
-![initial trello set up](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\initial trello set up.png)
+![initial trello set up](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/initial%20trello%20set%20up.png)
 
 Stage One - Mainly set up.
 
-![stage one](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\stage one.png)
+![stage one](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/stage%20one.png)
 
 Stage Two - Setting Up Functionality.
 
-![stage two - setting app functionality up](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\stage two - setting app functionality up.png)
+![stage two - setting app functionality up](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/stage%20two%20-%20setting%20app%20functionality%20up.png)
 
 Stage Three - Starting on views.
 
-![stage three - views](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\stage three - views.png)
+![stage three - views](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/stage%20three%20-%20views.png)
 
 Stage Four - Setting up the buyers and sellers.
 
-![stage four - self join and buyer and seller](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\stage four - self join and buyer and seller.png)
+![stage four - self join and buyer and seller](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/stage%20four%20-%20self%20join%20and%20buyer%20and%20seller.png)
 
 Stage Five - Polishing, testing and seeding.
 
-![stage five - polishing, testing and seeding](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\stage five - polishing, testing and seeding.png)
+![stage five - polishing, testing and seeding](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/stage%20five%20-%20polishing%2C%20testing%20and%20seeding.png)
 
 Stage Six - Documentation
 
-![stage six - documentation](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\stage six - documentation.png)
+![stage six - documentation](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/stage%20six%20-%20documentation.png)
 
 Completion!
 
-![completed trello](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\trello screenshots\completed trello.png)
+![completed trello](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/trello%20screenshots/completed%20trello.png)
