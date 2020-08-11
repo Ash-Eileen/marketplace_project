@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://valo-coach.herokuapp.com/</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/breach</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/brimstone</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/cypher</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/jett</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/killjoy</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/omen</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/phoenix</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/raze</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/reyna</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/sage</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/sova</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/viper</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/users/sign_in</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/16</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/18</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/19</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/21</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/22</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/23</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/24</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/25</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/26</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/listings/27</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/users/sign_up</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valo-coach.herokuapp.com/users/password/new</loc>
+  <lastmod>2020-08-11T04:42:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

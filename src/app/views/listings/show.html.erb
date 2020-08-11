@@ -41,7 +41,7 @@
 <%= link_to "Delete", @listing, method: "delete", data: {confirm: "Really delete the listing?"} if user_signed_in? && current_user.id == @listing.seller_id %>
 <br>
 
-<%= link_to 'Back', listings_path %>
+<%= link_to 'Home', root_path %>
 
 <%# Used for stripe payment. %>
 <script src="https://js.stripe.com/v3/"></script>
