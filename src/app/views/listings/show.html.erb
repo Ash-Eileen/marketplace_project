@@ -1,3 +1,4 @@
+<%# Displays current listing %>
 <p id="notice"><%= notice %></p>
 
 <h5>
@@ -28,19 +29,21 @@
   <%= number_to_currency(@listing.price) %>
 </h5>
 
+<%# Confirms what should display- nothing if user created listing, pay button if user signed in or call to sign in if not logged in. %>
 <% if user_signed_in? && current_user.id != @listing.seller_id  %>
   <button class="btn btn-danger" data-stripe="payment">Buy 1 hour of coaching: <%= number_to_currency(@listing.price) %></button>
 <% elsif !user_signed_in? %>
   <button type="button" class="btn btn-danger"> <%= link_to 'Please sign in to purchase coaching session', new_user_session_path, class:"text-white" %> </button>
 <% end %>
 <br>
+<%# Only displayed if current user created listing %>
 <%= link_to 'Edit', edit_listing_path(@listing) if user_signed_in? && current_user.id == @listing.seller_id %> |
 <%= link_to "Delete", @listing, method: "delete", data: {confirm: "Really delete the listing?"} if user_signed_in? && current_user.id == @listing.seller_id %>
 <br>
 
 <%= link_to 'Back', listings_path %>
 
-
+<%# Used for stripe payment. %>
 <script src="https://js.stripe.com/v3/"></script>
 
 <script>

@@ -1,3 +1,4 @@
+<%# Shared form to create or edit listings. %>
 <%= form_with(model: listing, local: true) do |form| %>
   <% if listing.errors.any? %>
     <div id="error_explanation">
@@ -17,6 +18,7 @@
     <%= form.text_area :bio%>
   </div>
 
+  <%# Displays each agent with their radio button as per controller set_agents method. %>
   <div class="field">
     <%= form.label :agents, class:"font-weight-bold" %>
     <br>

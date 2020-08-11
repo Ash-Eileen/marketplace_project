@@ -1,8 +1,12 @@
 class ListingsController < ApplicationController
+  # Sets up authentication so only signed in users can make changes or post new listings
   before_action :authenticate_user!,  only: [:new, :create, :edit, :update, :destroy]
+  # Sets up listings
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
+  # Sets list of agents from enum in model
   before_action :set_agents
 
+  # Used for stripe payment
   def show
     if user_signed_in? 
     @session = Stripe::Checkout::Session.create(
@@ -77,6 +81,7 @@ class ListingsController < ApplicationController
     end
   end
 
+  # Methods below set up views and routes for all agent pages so that listing are displayed per agent
   def breach
     @listings = Listing.all_agent_listings("Breach")
   end
@@ -125,6 +130,7 @@ class ListingsController < ApplicationController
     @listings = Listing.all_agent_listings("Viper")
   end
 
+  # Private methods that user does not need to access themselves
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_listing
@@ -136,6 +142,7 @@ class ListingsController < ApplicationController
       params.require(:listing).permit(:name, :bio, :agent, :availability, :price, :user_id, :picture)
     end
   
+    # Sets up an array with each agent for use in forms.
     def set_agents
       @agents = Listing.agents.keys
     end

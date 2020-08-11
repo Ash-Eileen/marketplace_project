@@ -1,3 +1,4 @@
+<%# Shows sellers listings that are available. Checks if they exist by confirming length > 0. %>
 <% if @listings.length > 0%>
 <h2>Listings posted by <%= @user.username %></h2>
 
@@ -9,6 +10,7 @@
     <p>Price per hour: <%= number_to_currency(listing.price)%></p>
     <hr>
 <% end%>
+<%# Still shows a message if there are no listings posted %>
 <%else%>
     <h3 class="text-center"><%=@user.username%> currently has no coaching sessions listed.</h3>
 <%end%>

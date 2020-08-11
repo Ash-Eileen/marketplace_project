@@ -1,3 +1,4 @@
+<%# Shared view to display agents listings. Checks they exist by verifying length greater than 0. %>
 <% if @listings.length > 0 %>
     <div class="row row-cols-5 justify-content-around text-center">
         <% @listings.each do |listing| %>
@@ -9,6 +10,7 @@
             </div>
         <%end%>
     </div>
+    <%# Still displays message to advise user why there no posts. %>
     <%else%>
     <p>No coaches are available yet! Check back soon.</p>
 <%end%>

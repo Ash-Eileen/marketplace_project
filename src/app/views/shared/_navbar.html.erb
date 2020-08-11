@@ -55,6 +55,7 @@
         <%= link_to "Viper", viper_path, class:"nav-link" %>
       </li>
 
+      <%# Changes displayed based on if user is logged in to acces their purchases, listing and new listing options or calls to log in. %>
       </li>
         <% if user_signed_in?%>
         <li class="nav-item active">
