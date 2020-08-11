@@ -33,7 +33,7 @@ In future I would like to add an internal messaging system, reviews and also tra
 
 ### Sitemap
 
-![Site Map](C:\Users\Ashley\projects\AshleySmith_T2A2\docs\Site map.png)
+![Site Map](https://github.com/Ash-Eileen/marketplace_project/blob/master/docs/Site%20map.pdf)
 
 ### Screenshots
 
